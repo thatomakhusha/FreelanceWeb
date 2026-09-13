@@ -152,27 +152,23 @@ const Pricing = () => {
             </div>
 
             <div className="grid grid-cols-2 border-t border-border md:grid-cols-3">
-                <div className="border-r border-border p-5">
-                    <span className="mb-2 block font-mono text-xs uppercase tracking-wider text-muted">
-                    Includes
-                    </span>
-                    <p className="text-sm">Minor content updates</p>
-                </div>
-
-                <div className="border-r border-border p-5">
-                    <span className="mb-2 block font-mono text-xs uppercase tracking-wider text-muted">
-                    Support
-                    </span>
-                    <p className="text-sm">Bug fixes & technical support</p>
-                </div>
-
-                <div className="p-5">
-                    <span className="mb-2 block font-mono text-xs uppercase tracking-wider text-muted">
-                    Updates
-                    </span>
-                    <p className="text-sm">Dependencies & security updates</p>
-                </div>
-                </div>
+                {[
+                    "Minor content updates",
+                    "Bug fixes",
+                    "Dependency updates",
+                    "Website monitoring",
+                    "Small design adjustments",
+                    "Technical support",
+                ].map((item) => (
+                    <div
+                    key={item}
+                    className="border-r border-b border-border p-5 text-sm text-muted"
+                    >
+                    <span className="mr-2 text-accent">✓</span>
+                    {item}
+                    </div>
+                ))}
+            </div>
         </div>
     </section>
   );
