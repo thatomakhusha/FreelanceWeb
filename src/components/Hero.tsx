@@ -6,7 +6,7 @@ const Hero = () => {
                 <span className="h-2 w-2 rounded-full bg-accent"></span>
                 Available for work
             </div>
-                <p className="font-mono text-sm uppercase tracking-[0.06em] text-muted">
+                <p className="font-mono text-sm uppercase tracking-[0.06em] text-muted-forground">
                     Johannesburg, South Africa
                 </p>
             </div>
@@ -22,7 +22,7 @@ const Hero = () => {
                     Web Designer & Developer
                 </span>
             </h1>
-            <p className="mb-10 mt-8 max-w-2xl font-mono text-base leading-relaxed text-muted md:text-lg">
+            <p className="mb-10 mt-8 max-w-2xl font-mono text-base leading-relaxed text-muted-forground md:text-lg">
                 I design and build fast, modern websites for businesses, professionals and growing brands.
             </p>
             <div className="flex flex-wrap items-center gap-6">

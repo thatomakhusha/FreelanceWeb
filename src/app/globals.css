@@ -4,8 +4,10 @@
   --color-background: #0f0f0f;
   --color-foreground: #e8e8e2;
   --color-muted: #555555;
+  --color-muted-forground: #888888;
   --color-border: #1e1e1e;
   --color-accent: #39d353;
+  --color-hover: #161515f5;
 
   --font-mono: "Courier New", monospace;
   --font-sans: Arial, Helvetica, sans-serif;

@@ -64,17 +64,17 @@ const SelectedWork = () => {
                         </div>
                         <div className="p-6">
                             <div className="mb-5 flex justify-between">
-                                <span className="font-mono text-xs text-muted">
+                                <span className="font-mono text-xs text-muted-forground">
                                     {project.id}
                                 </span>
-                                <span className="font-mono text-xs uppercase tracking-wider text-muted">
+                                <span className="font-mono text-xs uppercase tracking-wider text-muted-forground">
                                     {project.category}
                                 </span>
                             </div>
-                            <h3 className="mb-3 text-[1.2rem] transition-colors duration-200 group-hover:text-accent">
+                            <h3 className="mb-3 text-[1.1rem] font-bold transition-colors duration-200 group-hover:text-accent">
                                 {project.name}
                             </h3>
-                            <p className="text-sm leading-relaxed text-muted">
+                            <p className="text-sm leading-relaxed text-muted-forground">
                                 {project.description}
                             </p>
                             <div className="mt-5 flex items-center gap-1.5">
@@ -91,7 +91,7 @@ const SelectedWork = () => {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="ml-auto text-xs uppercase tracking-wider text-muted transition-colors hover:text-foreground"
+                                        className="ml-auto text-xs uppercase tracking-wider text-muted-forground transition-colors hover:text-foreground"
                                     >
                                         View →
                                     </a>

@@ -50,7 +50,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="font-mono text-sm uppercase tracking-[0.06em] text-muted transition-colors duration-200 hover:text-foreground"
+              className="font-mono text-sm uppercase tracking-[0.06em] text-muted-forground transition-colors duration-200 hover:text-foreground"
             >
               {link.label}
             </a>
@@ -141,7 +141,7 @@ const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="border-b border-border py-3.5 font-mono text-sm uppercase tracking-[0.06em] text-muted transition-colors duration-200 hover:text-foreground"
+                className="border-b border-border py-3.5 font-mono text-sm uppercase tracking-[0.06em] text-muted-forground transition-colors duration-200 hover:text-foreground"
               >
                 {link.label}
               </a>
