@@ -58,17 +58,20 @@ const Services = () => {
                 {SERVICES.map((service) => (
                     <div 
                         key={service.id} 
-                        className="group flex flex-col gap-2 p-5 hover:bg-hover hover:text-accent hover:-translate-y-0.5 transition-all duration-300 ease-in-out border-b border-r border-border md:nth-[3n]:border-r-0 md:nth-last-[-n+3]:border-b-0"
+                        className="group flex gap-3 p-5 hover:bg-hover hover:text-accent hover:-translate-y-0.5 transition-all duration-300 ease-in-out border-b border-r border-border md:nth-[3n]:border-r-0 md:nth-last-[-n+3]:border-b-0"
                     >
-                        <h3 className="text-accent text-[1.1rem]">
+                        <h3 className="text-accent font-family text-[1.1rem]">
                             {service.id}
                         </h3>
-                        <h3 className="font-bold text-[1.1rem] ">
-                            {service.name}
-                        </h3>
-                        <p className="text-sm leading-relaxed text-muted-forground">
-                            {service.description}
-                        </p>
+                        <div className="flex flex-col gap-2">
+                            <h3 className="font-bold text-[1.1rem]">
+                                {service.name}
+                            </h3>
+                            <p className="text-sm leading-relaxed text-muted-forground">
+                                {service.description}
+                            </p>
+                        </div>
+                        
                     </div>
                 ))}
             </div>

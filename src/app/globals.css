@@ -7,10 +7,12 @@
   --color-muted-forground: #888888;
   --color-border: #1e1e1e;
   --color-accent: #39d353;
+  --color-accent-muted: #4FBE68;
   --color-hover: #161515f5;
 
   --font-mono: "Courier New", monospace;
   --font-sans: Arial, Helvetica, sans-serif;
+  --font-family: "JetBrains Mono", monospace;
 }
 
 

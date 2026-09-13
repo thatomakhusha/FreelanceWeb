@@ -64,7 +64,7 @@ const SelectedWork = () => {
                         </div>
                         <div className="p-6">
                             <div className="mb-5 flex justify-between">
-                                <span className="font-mono text-xs text-muted-forground">
+                                <span className=" text-xs font-family text-muted-forground">
                                     {project.id}
                                 </span>
                                 <span className="font-mono text-xs uppercase tracking-wider text-muted-forground">
