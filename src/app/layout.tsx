@@ -9,9 +9,50 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thato Makhusha | Web Designer & Developer",
+  metadataBase: new URL("https://freelance-web-eta.vercel.app"),
+
+  title: "Thato Makhusha | Software Engineering Student & Web Developer",
+
   description:
-    "Professional websites and web applications designed and developed by Thato Makhusha.",
+    "Thato Makhusha is a Software Engineering student and freelance web designer and developer based in Johannesburg, South Africa, building professional websites and web applications for businesses and professionals.",
+
+  keywords: [
+    "Thato Makhusha",
+    "Software Engineering student",
+    "software engineering",
+    "software developer",
+    "web developer",
+    "web designer",
+    "freelance web developer",
+    "freelance web designer",
+    "web developer Johannesburg",
+    "software developer Johannesburg",
+    "web development South Africa",
+    "software engineering South Africa",
+  ],
+
+  authors: [{ name: "Thato Makhusha" }],
+
+  creator: "Thato Makhusha",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  alternates: {
+    canonical: "https://freelance-web-eta.vercel.app/",
+  },
+
+  openGraph: {
+    title: "Thato Makhusha | Software Engineering Student & Web Developer",
+    description:
+      "Software Engineering student and freelance web designer and developer based in Johannesburg, South Africa. Building professional websites and web applications for businesses and professionals.",
+    url: "https://freelance-web-eta.vercel.app/",
+    siteName: "Thato Makhusha",
+    type: "website",
+    locale: "en_ZA",
+  },
 };
 
 export default function RootLayout({
