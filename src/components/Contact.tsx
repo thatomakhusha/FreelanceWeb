@@ -20,26 +20,26 @@ const Contact = () => {
 
     const formData = new FormData(form);
 
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      subject: formData.get("subject"),
-      message: formData.get("message"),
-    };
+    formData.append(
+      "access_key",
+      process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""
+    );
+
+    formData.append(
+      "subject",
+      `New Portfolio Enquiry from ${formData.get("name")}`
+    );
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+        body: formData,
       });
 
       const result = await response.json();
 
-      if (!response.ok) {
-        throw new Error(result.error);
+      if (!result.success) {
+        throw new Error(result.message);
       }
 
       setStatus(
@@ -47,8 +47,8 @@ const Contact = () => {
       );
 
       form.reset();
-    } catch(error) {
-        console.error(error);
+    } catch (error) {
+      console.error(error);
       setStatus("Something went wrong. Please try again.");
     } finally {
       setIsSending(false);
@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Side */}
+        {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-5"
@@ -206,4 +206,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
