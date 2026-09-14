@@ -23,7 +23,7 @@ const EXPECTATIONS = [
 
 const About = () => {
     return ( 
-        <section className="section bg-hover">
+        <section id="about" className="section bg-hover">
             <SectionLabel number="05" label="About" />
             <div className="grid grid-cols-2 gap-6">
                 <div className="flex flex-col gap-5">
@@ -64,7 +64,9 @@ const About = () => {
                         </p>
                         <div className="flex flex-col gap-2">
                             {EXPECTATIONS.map((item) => (
-                                <div>
+                                <div
+                                    key={item}
+                                >
                                     <span style={{ color: "#39d353", marginTop: 2, flexShrink: 0 }}>—</span>
                                     <span className="ml-3">
                                         {item}
