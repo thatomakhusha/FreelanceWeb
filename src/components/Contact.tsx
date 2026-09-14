@@ -59,45 +59,49 @@ const Contact = () => {
     <section id="contact" className="section">
       <SectionLabel number="06" label="Contact" />
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid gap-10 lg:grid-cols-2 lg:gap-10">
         {/* Left Side */}
         <div className="flex flex-col gap-5">
-          <p className="font-sans text-[2.6rem]">
+          <p className="font-sans text-[clamp(2rem,5vw,2.6rem)] leading-tight">
             Ready to start your project?
           </p>
 
-          <p className="text-muted-forground text-[0.97rem]">
+          <p className="text-[0.97rem] text-muted-forground">
             Every project starts with a conversation. Reach out directly or
             use the form — I&apos;ll respond within 24 hours.
           </p>
 
           {/* Phone */}
-          <div className="mr-4 mt-6 flex gap-4 border border-border bg-hover p-4">
-            <div className="border border-accent bg-background px-3 py-3">
+          <div className="mt-6 flex gap-4 border border-border bg-hover p-4">
+            <div className="shrink-0 border border-accent bg-background px-3 py-3">
               <Phone size={16} className="text-accent" />
             </div>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex min-w-0 flex-col gap-1">
               <p className="font-sans text-[0.7rem] uppercase text-muted-forground">
                 Phone
               </p>
 
-              <p className="font-sans">+27 (0)73 963 5201</p>
+              <p className="wrap-break-word font-sans">
+                +27 (0)73 963 5201
+              </p>
             </div>
           </div>
 
           {/* Email */}
-          <div className="mr-4 flex gap-4 border border-border bg-hover p-4">
-            <div className="border border-accent bg-background px-3 py-3">
+          <div className="flex gap-4 border border-border bg-hover p-4">
+            <div className="shrink-0 border border-accent bg-background px-3 py-3">
               <Mail size={16} className="text-accent" />
             </div>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex min-w-0 flex-col gap-1">
               <p className="font-sans text-[0.7rem] uppercase text-muted-forground">
                 Email
               </p>
 
-              <p className="font-sans">thembamakhusha@outlook.com</p>
+              <p className="break-all font-sans">
+                thembamakhusha@outlook.com
+              </p>
             </div>
           </div>
         </div>
@@ -108,7 +112,7 @@ const Contact = () => {
           className="flex flex-col gap-5"
         >
           {/* Name + Email */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid gap-5 md:grid-cols-2 md:gap-4">
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="name"

@@ -37,46 +37,47 @@ const SERVICES = [
         description:
             "Ongoing updates and support so your site stays fresh and working.",
     },
-  
 ];
 
 const Services = () => {
-    return ( 
+    return (
         <section id="services" className="section">
             <SectionLabel number="02" label="What I Offer" />
 
-            <h2 className="flex flex-col font-sans gap-2 mb-15">
-                <span className="text-[clamp(3rem,8vw,2rem)] leading-[0.95] text-foreground">
+            <h2 className="mb-15 flex flex-col gap-2 font-sans">
+                <span className="text-[clamp(2rem,6vw,3rem)] leading-[0.95] text-foreground">
                     A focused set of services,
                 </span>
-                <span className="text-[clamp(3rem,8vw,2rem)] leading-[0.95] text-accent">
+
+                <span className="text-[clamp(2rem,6vw,3rem)] leading-[0.95] text-accent">
                     done properly
                 </span>
             </h2>
 
             <div className="grid md:grid-cols-3">
                 {SERVICES.map((service) => (
-                    <div 
-                        key={service.id} 
-                        className="group flex gap-3 p-5 hover:bg-hover hover:text-accent hover:-translate-y-0.5 transition-all duration-300 ease-in-out border-b border-r border-border md:nth-[3n]:border-r-0 md:nth-last-[-n+3]:border-b-0"
+                    <div
+                        key={service.id}
+                        className="group flex gap-3 border-b border-border p-5 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-hover hover:text-accent md:border-r md:nth-[3n]:border-r-0 md:nth-last-[-n+3]:border-b-0"
                     >
-                        <h3 className="text-accent font-family text-[1.1rem]">
+                        <h3 className="shrink-0 font-family text-[1.1rem] text-accent">
                             {service.id}
                         </h3>
+
                         <div className="flex flex-col gap-2">
-                            <h3 className="font-bold text-[1.1rem]">
+                            <h3 className="text-[1.1rem] font-bold">
                                 {service.name}
                             </h3>
+
                             <p className="text-sm leading-relaxed text-muted-forground">
                                 {service.description}
                             </p>
                         </div>
-                        
                     </div>
                 ))}
             </div>
         </section>
-     );
-}
- 
+    );
+};
+
 export default Services;

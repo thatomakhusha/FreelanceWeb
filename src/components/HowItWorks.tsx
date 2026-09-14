@@ -25,25 +25,27 @@ const PROCESSES = [
         description:
             "You review the finished website, we make the final refinements, and once everything is approved, your website goes live. Post-launch support is included.",
     },
-  
 ];
 
 const HowItWorks = () => {
-    return ( 
+    return (
         <section className="section bg-hover">
             <SectionLabel number="03" label="How it works" />
+
             <div className="grid md:grid-cols-4">
                 {PROCESSES.map((process) => (
-                    <div 
-                        key={process.id} 
-                        className="flex flex-col gap-4 p-5 border-r-2 border-border last:border-r-0"
-                    >  
-                        <p className="text-accent-muted text-[2rem] font-bold font-family">
+                    <div
+                        key={process.id}
+                        className="flex flex-col gap-4 border-b border-border p-5 last:border-b-0 md:border-b-0 md:border-r-2 md:last:border-r-0"
+                    >
+                        <p className="font-family text-[2rem] font-bold text-accent-muted">
                             {process.id}
                         </p>
-                        <h3 className="font-bold text-[1.1rem]">
+
+                        <h3 className="text-[1.1rem] font-bold">
                             {process.name}
                         </h3>
+
                         <p className="text-sm leading-relaxed text-muted-forground">
                             {process.description}
                         </p>
@@ -51,7 +53,7 @@ const HowItWorks = () => {
                 ))}
             </div>
         </section>
-     );
-}
- 
+    );
+};
+
 export default HowItWorks;
