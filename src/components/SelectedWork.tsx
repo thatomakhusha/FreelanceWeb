@@ -40,7 +40,7 @@ const Projects = [
         description:
             "A personal portfolio for a creative professional, structured to showcase work clearly and make a strong first impression with prospective firms.",
         image: "Amais port preview.png",
-        link: "https://thatomakhusha.github.io/Amai-Portfolio/",
+        link: "https://amai-portfolio.vercel.app/",
     },
 ];
 
