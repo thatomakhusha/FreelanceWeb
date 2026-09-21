@@ -11,19 +11,20 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://freelance-web-eta.vercel.app"),
 
-  title: "Thato Makhusha | Web Designer & Web Developer",
+  title: "Thato Makhusha | Web Developer",
 
   description:
-    "Thato Makhusha is a freelance web designer and developer based in Johannesburg, South Africa, building professional websites and web applications for businesses and professionals.",
+    "Thato Makhusha is a freelance web developer based in Johannesburg, South Africa, building professional websites and web applications for businesses and professionals.",
 
   keywords: [
     "Thato Makhusha",
     "web developer",
-    "web designer",
+    "front-end development",
+    "front-end developer",
     "freelance web developer",
-    "freelance web designer",
+    "website developer",
     "web developer Johannesburg",
-    "web designer Johannesburg",
+    "front-end developer Johannesburg",
     "web development South Africa",
     "website developer South Africa",
     "freelance web developer South Africa",
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Thato Makhusha | Web Designer & Web Developer",
+    title: "Thato Makhusha | Web Developer",
     description:
-      "Freelance web designer and web developer based in Johannesburg, South Africa, building professional websites and web applications for businesses and professionals.",
+      "Freelance web developer based in Johannesburg, South Africa, building professional websites and web applications for businesses and professionals.",
     url: "https://freelance-web-eta.vercel.app/",
     siteName: "Thato Makhusha",
     type: "website",
