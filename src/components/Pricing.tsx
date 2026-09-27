@@ -3,7 +3,7 @@ import SectionLabel from "./SectionLabel";
 const PRICING = [
   {
     tier: "Starter",
-    from: "R3,500",
+    from: "R2,500-R3,500",
     summary:
       "For individuals and small businesses needing a clean, professional online presence.",
     includes: [
@@ -16,7 +16,7 @@ const PRICING = [
   },
   {
     tier: "Professional",
-    from: "R6,000",
+    from: "R4,500-R6,500",
     summary:
       "For established businesses and professionals who need a more complete digital presence.",
     includes: [
@@ -31,7 +31,7 @@ const PRICING = [
   },
   {
     tier: "Custom",
-    from: "R10,000",
+    from: "R8,000",
     summary:
       "For complex builds, web applications, or clients with specific requirements.",
     includes: [
