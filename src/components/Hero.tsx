@@ -22,7 +22,7 @@ const Hero = () => {
                 </span>
 
                 <span className="max-w-4xl text-[clamp(2.5rem,8vw,5rem)] leading-[0.95] text-accent">
-                    Web Designer & Developer
+                    Web Developer
                 </span>
             </h1>
 

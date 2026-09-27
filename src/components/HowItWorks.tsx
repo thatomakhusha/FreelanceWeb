@@ -23,7 +23,7 @@ const PROCESSES = [
         id: "04",
         name: "Review & Launch",
         description:
-            "You review the finished website, we make the final refinements, and once everything is approved, your website goes live. Post-launch support is included.",
+            "You review the finished website, we make the final refinements, and once everything is approved, your website goes live. Ongoing support is available after launch.",
     },
 ];
 

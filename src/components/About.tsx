@@ -33,7 +33,7 @@ const About = () => {
                     </p>
 
                     <p className="text-[0.97rem] text-muted-forground">
-                        I'm Thato Makhusha, a web designer and developer focused
+                        I'm Thato Makhusha, a Web Developer focused
                         on building thoughtful, professional websites for
                         businesses and individuals who take their online presence
                         seriously.
