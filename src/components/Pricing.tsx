@@ -3,7 +3,7 @@ import SectionLabel from "./SectionLabel";
 const PRICING = [
   {
     tier: "Starter",
-    from: "R2,500-R3,500",
+    from: "R2,500 - R3,500",
     summary:
       "For individuals and small businesses needing a clean, professional online presence.",
     includes: [
@@ -16,14 +16,14 @@ const PRICING = [
   },
   {
     tier: "Professional",
-    from: "R4,500-R6,500",
+    from: "R4,500 - R6,500",
     summary:
       "For established businesses and professionals who need a more complete digital presence.",
     includes: [
       "Up to 8 pages",
-      "Custom design",
+      "Custom website build",
       "Mobile responsive",
-      "Contact form + integrations",
+      "Contact form + selected integrations",
       "SEO fundamentals",
       "2 rounds of revisions",
     ],
@@ -31,12 +31,12 @@ const PRICING = [
   },
   {
     tier: "Custom",
-    from: "R8,000",
+    from: "R8,000+",
     summary:
       "For complex builds, web applications, or clients with specific requirements.",
     includes: [
       "Scope defined per project",
-      "Web app functionality",
+      "Advanced web functionality",
       "Custom integrations",
       "Performance optimisation",
       "Dedicated support",
@@ -75,7 +75,7 @@ const Pricing = () => {
             </div>
 
             <div className="mb-7 font-mono text-[0.625rem] tracking-[0.06em] text-muted">
-              starting from
+              project range
             </div>
 
             <p className="mb-8 border-b border-border pb-7 text-sm font-light leading-[1.65] text-muted">
@@ -112,9 +112,10 @@ const Pricing = () => {
       </div>
 
       <p className="border-l-2 border-accent pl-4 pt-2 text-[0.75rem] leading-[1.7] tracking-[0.06em] text-muted-forground">
-        All prices are starting points. Final pricing depends on project
-        scope, complexity, and timeline. Every project begins with a free
-        consultation.
+        All prices are project ranges. Final pricing depends on project scope,
+        complexity, content, and timeline. Domain registration and any third-party
+        hosting/service costs are billed separately. Every project begins with a
+        free consultation.
       </p>
 
       {/* Ongoing Maintenance */}

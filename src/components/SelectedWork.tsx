@@ -20,7 +20,7 @@ const Projects = [
         description:
             "A warm, elegant bakery website built to attract new customers and showcase the full product menu.",
         image: "T's cakes preview.png",
-        link: "https://ts-cakes.vercel.app/",
+        link: "https://tscakes.co.za",
     },
     {
         id: "03",
