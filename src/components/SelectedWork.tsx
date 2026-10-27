@@ -4,36 +4,46 @@ import Image from "next/image";
 const Projects = [
     {
         id: "01",
-        name: "SpendWise",
+        name: "Pursuit",
         category: "Web Application",
-        stack: ["HTML/CSS", "JavaScript", "Firebase"],
+        stack: ["Next.js", "Tailwind CSS", "TypeScript", "Supabase"],
         description:
-            "A full-featured expense tracker with income and expense logging, category breakdowns, and a monthly overview dashboard.",
-        image: "Spendwise preview.png",
-        link: "https://thatomakhusha.github.io/WebsiteSpendWise/",
+            "Application and career pathway tracker. Jobs, internships, learnerships, bursaries and university applications in one place.",
+        image: "pursuit.png",
+        link: "https://pursuit-brown-ten.vercel.app/",
     },
     {
         id: "02",
+        name: "BitBunker (still in development)",
+        category: "Web Application",
+        stack: ["Java", "Spring Boot", "PostgreSQL", "Next.js", "TypeScript", "Tailwind CSS"],
+        description:
+            "Retro arcade games hub with 15 planned games and per-game leaderboards. Java game logic, a Next.js frontend, and a Spring Boot and PostgreSQL backend I am learning as I build. In development.",
+        image: "bitbunker.png",
+        // link: "",
+    },
+    {
+        id: "03",
         name: "T's Cakes",
         category: "Business Website",
-        stack: ["Next.js", "Tailwind CSS", "TypeScript"],
+        stack: ["Next.js", "Tailwind CSS", "TypeScript", "Supabase"],
         description:
-            "A warm, elegant bakery website built to attract new customers and showcase the full product menu.",
+            "Client website for a bakery business, plus a private admin hub where the owner approves or rejects customer reviews, built with Supabase.",
         image: "T's cakes preview.png",
         link: "https://tscakes.co.za",
     },
     {
-        id: "03",
+        id: "04",
         name: "Golden Moments",
         category: "Business Website",
         stack: ["Next.js", "Tailwind CSS", "TypeScript"],
         description:
             "A warm, elegant bakery website built to attract new customers and showcase the full product menu.",
-        image: "Golden moments preview.png",
+        image: "golden-moments.png",
         link: "https://golden-moments-gold.vercel.app/",
     },
     {
-        id: "04",
+        id: "05",
         name: "Portfolio Site",
         category: "Professional Portfolio",
         stack: ["HTML/CSS", "JavaScript"],
